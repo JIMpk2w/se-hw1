@@ -1,5 +1,5 @@
 /*
- * Name: ภัควัฒน์ ปานกลาง
+ * Name: Pakawat Panklang
  * Student ID: 6510450763
  */
 
