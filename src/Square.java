@@ -1,3 +1,8 @@
+/*
+ * Name: ภัควัฒน์ ปานกลาง
+ * Student ID: 6510450763
+ */
+
 public class Square {
     private String name;
     private int money;

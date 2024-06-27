@@ -1,3 +1,8 @@
+/*
+ * Name: ภัควัฒน์ ปานกลาง
+ * Student ID: 6510450763
+ */
+
 import java.util.Random;
 
 public class Die {

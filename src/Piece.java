@@ -1,3 +1,8 @@
+/*
+ * Name: ภัควัฒน์ ปานกลาง
+ * Student ID: 6510450763
+ */
+
 public class Piece {
     private String color;
     private Square location;

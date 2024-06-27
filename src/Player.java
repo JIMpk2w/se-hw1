@@ -1,3 +1,8 @@
+/*
+ * Name: ภัควัฒน์ ปานกลาง
+ * Student ID: 6510450763
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -49,6 +54,10 @@ public class Player {
                 if (!piece.getLocation().getOwner().equals(name) && !piece.getLocation().getOwner().equals("")) {
                     decreaseMoney(piece.getLocation().getMoney());
                     System.out.println("You step on " + piece.getLocation().getOwner() + "'s location");
+                    if (money - piece.getLocation().getMoney() < 0) {
+                        System.out.println("\nGame Over!\n");
+                        System.exit(0);
+                    }
                 } else if (board.getSquares().get(0).getName().equals(newLoc.getName()) || board.getSquares().get(10).getName().equals(newLoc.getName()) ||
                         board.getSquares().get(20).getName().equals(newLoc.getName()) || board.getSquares().get(30).getName().equals(newLoc.getName())) {
                     System.out.println("You step on free location");
