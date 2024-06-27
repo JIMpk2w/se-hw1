@@ -8,11 +8,11 @@ public class Board {
         makeBoard(squares);
     }
 
-    public void addSquareName(ArrayList<Square> square, String name) {
+    public void addSquare(ArrayList<Square> square, String name, int money) {
         name = name.trim();
 
         if (!name.equals("")) {
-            square.add(new Square(name));
+            square.add(new Square(name, money));
         }
     }
 
@@ -36,46 +36,45 @@ public class Board {
     }
 
     public void makeBoard(ArrayList<Square> squares) {
-        addSquareName(squares, "Zero Start");
-        addSquareName(squares, "First Street");
-        addSquareName(squares, "Second Avenue");
-        addSquareName(squares, "Third Boulevard");
-        addSquareName(squares, "Fourth Lane");
-        addSquareName(squares, "Fifth Plaza");
-        addSquareName(squares, "Sixth Square");
-        addSquareName(squares, "Seventh Park");
-        addSquareName(squares, "Eighth Court");
-        addSquareName(squares, "Ninth Circle");
-        addSquareName(squares, "Tenth Road");
-        addSquareName(squares, "Eleventh Drive");
-        addSquareName(squares, "Twelfth Terrace");
-        addSquareName(squares, "Thirteenth Place");
-        addSquareName(squares, "Fourteenth Garden");
-        addSquareName(squares, "Fifteenth View");
-        addSquareName(squares, "Sixteenth Way");
-        addSquareName(squares, "Seventeenth Point");
-        addSquareName(squares, "Eighteenth Walk");
-        addSquareName(squares, "Nineteenth Promenade");
-        addSquareName(squares, "Twentieth Crossing");
-        addSquareName(squares, "Twenty-First Highway");
-        addSquareName(squares, "Twenty-Second Path");
-        addSquareName(squares, "Twenty-Third Ridge");
-        addSquareName(squares, "Twenty-Fourth Heights");
-        addSquareName(squares, "Twenty-Fifth Hollow");
-        addSquareName(squares, "Twenty-Sixth Isle");
-        addSquareName(squares, "Twenty-Seventh Meadow");
-        addSquareName(squares, "Twenty-Eighth Estate");
-        addSquareName(squares, "Twenty-Ninth Field");
-        addSquareName(squares, "Thirtieth Grove");
-        addSquareName(squares, "Thirty-First Hill");
-        addSquareName(squares, "Thirty-Second Parkland");
-        addSquareName(squares, "Thirty-Third Shore");
-        addSquareName(squares, "Thirty-Fourth Valley");
-        addSquareName(squares, "Thirty-Fifth Bay");
-        addSquareName(squares, "Thirty-Sixth Cove");
-        addSquareName(squares, "Thirty-Seventh Harbor");
-        addSquareName(squares, "Thirty-Eighth Pond");
-        addSquareName(squares, "Thirty-Ninth Forest");
-        addSquareName(squares, "Fortieth Ridge");
+        addSquare(squares, "Zero Start", 0);
+        addSquare(squares, "First Street", 60);
+        addSquare(squares, "Second Avenue", 60);
+        addSquare(squares, "Third Boulevard", 140);
+        addSquare(squares, "Fourth Lane", 120);
+        addSquare(squares, "Fifth Plaza", 160);
+        addSquare(squares, "Sixth Square", 100);
+        addSquare(squares, "Seventh Park", 120);
+        addSquare(squares, "Eighth Court", 170);
+        addSquare(squares, "Ninth Circle", 110);
+        addSquare(squares, "Tenth Road", 0);
+        addSquare(squares, "Eleventh Drive", 140);
+        addSquare(squares, "Twelfth Terrace", 160);
+        addSquare(squares, "Thirteenth Place", 200);
+        addSquare(squares, "Fourteenth Garden", 180);
+        addSquare(squares, "Fifteenth View", 180);
+        addSquare(squares, "Sixteenth Way", 200);
+        addSquare(squares, "Seventeenth Point", 220);
+        addSquare(squares, "Eighteenth Walk", 220);
+        addSquare(squares, "Nineteenth Promenade", 240);
+        addSquare(squares, "Twentieth Crossing", 0);
+        addSquare(squares, "Twenty-First Highway", 260);
+        addSquare(squares, "Twenty-Second Path", 260);
+        addSquare(squares, "Twenty-Third Ridge", 150);
+        addSquare(squares, "Twenty-Fourth Heights", 280);
+        addSquare(squares, "Twenty-Fifth Hollow", 300);
+        addSquare(squares, "Twenty-Sixth Isle", 300);
+        addSquare(squares, "Twenty-Seventh Meadow", 320);
+        addSquare(squares, "Twenty-Eighth Estate", 200);
+        addSquare(squares, "Twenty-Ninth Field", 350);
+        addSquare(squares, "Thirtieth Grove", -75);
+        addSquare(squares, "Thirty-First Hill", 400);
+        addSquare(squares, "Thirty-Second Parkland", 370);
+        addSquare(squares, "Thirty-Third Shore", 320);
+        addSquare(squares, "Thirty-Fourth Valley", 310);
+        addSquare(squares, "Thirty-Fifth Bay", 500);
+        addSquare(squares, "Thirty-Sixth Cove", 410);
+        addSquare(squares, "Thirty-Seventh Harbor", 440);
+        addSquare(squares, "Thirty-Eighth Pond", 510);
+        addSquare(squares, "Thirty-Ninth Forest", 550);
     }
 }

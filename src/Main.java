@@ -65,8 +65,9 @@ public class Main {
                 System.out.println("Invalid input!");
             }
         }
-
+        System.out.println("------------------------------------");
         System.out.println("\nGame Start!\n");
+        System.out.println("------------------------------------");
         master.playGame(turnNum);
         System.out.println("\nThank you for playing!\n");
     }
