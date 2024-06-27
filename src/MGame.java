@@ -9,10 +9,16 @@ import java.util.ArrayList;
 public class MGame {
     private int roundCnt;
     private ArrayList<Player> players;
+    private Die dice1;
+    private Die dice2;
+    private Board board;
 
     public MGame() {
         roundCnt = 0;
         players = new ArrayList<>();
+        dice1 = new Die();
+        dice2 = new Die();
+        board = new Board();
     }
 
     public void addPlayer(String name, String pieceColor) {
